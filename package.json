@@ -1,20 +1,35 @@
 {
   "name": "tre-svg-panel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Edit SVGs and watch the effect in realtime",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/**"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/regular/tre-svg-panel.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "tre",
+    "ssb"
+  ],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/regular/tre-svg-panel/issues"
+  "devDependencies": {
+    "tre-client": "^4.1.0"
   },
-  "homepage": "https://github.com/regular/tre-svg-panel#readme"
+  "dependencies": {
+    "module-styles": "^1.0.0",
+    "mutant": "^3.29.0",
+    "pull-stream": "^3.6.14",
+    "tre-editor-accordion": "^1.0.0",
+    "tre-editor-shell": "^1.6.1",
+    "tre-svg-editor": "^1.0.0"
+  },
+  "tre-import": {
+    "messages": {
+      "heart-circle.svg": {
+        "type": "svg",
+        "name": "heart-circle",
+        "svg": "$include assets/heart-circle.svg"
+      }
+    }
+  }
 }
